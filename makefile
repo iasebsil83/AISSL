@@ -1,7 +1,7 @@
-aissl: AISSL[0.1.0].o
-	gcc -o aissl AISSL[0.1.0].o
-	rm -f AISSL[0.1.0].o
+run: AISSL.o
+	gcc -o run AISSL.o
+	rm -f AISSL.o
 
-AISSL[0.1.0].o: AISSL[0.1.0].c
-	gcc -c -Wall AISSL[0.1.0].c
+AISSL.o: AISSL.c
+	gcc -c -Wall AISSL.c
 
